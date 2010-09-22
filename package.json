@@ -1,0 +1,8 @@
+{ "readme": "http://github.com/coffeemate/merylex#readme"
+, "version": "0.0.1"
+, "description": "Extras for Meryl"
+, "main": "index"
+, "author": "Kadir Pekel <kadirpekel@gmail.com>"
+, "name": "merylex"
+, "engines": { "node": ">=0.1.101" }
+}
