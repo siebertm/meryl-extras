@@ -4,5 +4,6 @@
 , "main": "index"
 , "author": "Kadir Pekel <kadirpekel@gmail.com>"
 , "name": "meryl-extras"
+, "dependencies": {"meryl": ">= 0.2.0"}
 , "engines": { "node": ">=0.1.101" }
 }
