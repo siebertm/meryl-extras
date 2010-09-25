@@ -5,7 +5,7 @@ var meryl = require('meryl'),
 var generictemplate = merylex('generictemplate');
 
 require('http').createServer(
-	meryl
+  meryl
   .x('render',
     generictemplate({
       templateExt: 'jade',
@@ -13,8 +13,8 @@ require('http').createServer(
     }
   ))
   .h('GET /', function() {
-	    this.render('home', {people: ['bob', 'alice', 'jane', 'meryl']});
-	  }
+      this.render('home', {people: ['bob', 'alice', 'jane', 'meryl']});
+    }
   )
   .cgi()
 ).listen(3000);
