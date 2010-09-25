@@ -1,5 +1,5 @@
 <ul>
   <% for(var i in people) { %>
-    <%= template('content', {name: people[i]}) %>
+    <%= render('content', {name: people[i]}) %>
   <% } %>
 </ul>
