@@ -1,0 +1,5 @@
+<ul>
+  <% for name in @people: %>
+    <%- @template('content', {name: name}) %>
+  <% end %>
+</ul>

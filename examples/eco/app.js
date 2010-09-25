@@ -1,9 +1,11 @@
 var meryl = require('meryl'),
   merylex = require('./../../index');
   
-var microtemplate = merylex('microtemplate');
+var eco = require('eco');
 
-meryl.x('render', microtemplate());
+var gtemplate = merylex('generictemplate');
+
+meryl.x('render', gtemplate({templateExt: 'eco', renderFunc: eco.render }));
 
 meryl.h('GET /', function() {
   this.render('home', {people: ['bob', 'alice', 'jane', 'meryl']});
