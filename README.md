@@ -32,21 +32,21 @@ This one demonstrates the usage of [eco](http://github.com/sstephenson/eco) temp
 
 	// app.js
 	
-  var meryl = require('meryl'),
-    merylex = require('meryl-extras'),
-    eco = require('eco');
-
-  var generictemplate = merylex('generictemplate');
-
-  require('http').createServer(
-  	meryl
-    .x('render', generictemplate({templateExt: 'eco', renderFunc: eco.render }))
-    .h('GET /', function() {
-  	    this.render('home', {people: ['bob', 'alice', 'jane', 'meryl']});
-  	  }
-    )
-    .cgi()
-  ).listen(3000);
+	var meryl = require('meryl'),
+	  merylex = require('meryl-extras'),
+	  eco = require('eco');
+		
+	var generictemplate = merylex('generictemplate');
+	
+	require('http').createServer(
+	  meryl
+	  .x('render', generictemplate({templateExt: 'eco', renderFunc: eco.render }))
+	  .h('GET /', function() {
+		    this.render('home', {people: ['bob', 'alice', 'jane', 'meryl']});
+		  }
+	  )
+	  .cgi()
+	).listen(3000);
   
 
 Available Extras
@@ -58,7 +58,7 @@ Plugins:
 
 Extensions:
 
- * Micro Template (microtemplate)
+ * Generic template (generictemplate)
 
 Wishlist (To do)
 ------------
@@ -73,8 +73,6 @@ Extensions
  * Cookie management
  * Session management
  * Cache management
- * Mustache.js template engine integration (@berkerpeksag)
- * Eco template engine integration
  * Gzip compression
 
 Please don't forget to help this project by contibuting.

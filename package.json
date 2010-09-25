@@ -1,5 +1,5 @@
 { "readme": "http://github.com/coffeemate/meryl-extras#readme"
-, "version": "0.0.1"
+, "version": "0.0.2"
 , "description": "Extras for Meryl"
 , "main": "index"
 , "author": "Kadir Pekel <kadirpekel@gmail.com>"
