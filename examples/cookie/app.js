@@ -1,18 +1,16 @@
 var meryl = require('meryl'),
   merylex = require('./../../index');
 
-var cookieResolver = merylex('cookieResolver');
-var cookieRecorder = merylex('cookieRecorder');
+var cookie = merylex('cookie');
 
 meryl
-  .x('cook', cookieRecorder())
-  .p("*", cookieResolver())
+  .p("*", cookie())
   .h('GET /', function () {
-    // look for cookies
-    console.dir(this.cookies);
+  
+    this.responseCookies.foo = 'bar';
     
-    // send a cookie
-    this.cook('name', 'kadir');
+    // look for cookies
+    console.dir(this.requestCookies);
     
     this.send();
   });
