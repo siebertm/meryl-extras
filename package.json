@@ -6,4 +6,9 @@
 , "name": "meryl-extras"
 , "dependencies": {"meryl": ">= 0.2.0"}
 , "engines": { "node": ">=0.1.101" }
+, "repository" :
+  {
+    "type": "git"
+  , "url": "http://github.com/coffeemate/meryl-extras"
+  }
 }
