@@ -1,10 +1,10 @@
 { "readme": "http://github.com/coffeemate/meryl-extras#readme"
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "description": "Extras for Meryl"
 , "main": "index"
 , "author": "Kadir Pekel <kadirpekel@gmail.com>"
 , "name": "meryl-extras"
-, "dependencies": {"meryl": ">= 0.2.0"}
+, "dependencies": {"meryl": ">= 0.3.1"}
 , "engines": { "node": ">=0.1.101" }
 , "repository" :
   {
