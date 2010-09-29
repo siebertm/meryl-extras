@@ -7,7 +7,7 @@ meryl.p('GET *', paperboy());
 
 meryl.h('GET /', function () {
   this.status = 301;
-  this.headers['Location'] = '/static/index.html';
+  this.headers['Location'] = '/index.html';
   this.send();
 });
 
